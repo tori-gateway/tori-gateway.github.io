@@ -1,0 +1,343 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #161616;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: 'Army-Rust';
+    src: url('../fonts/army_rust/ARMY\ RUST.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Absender';
+    src: url('../fonts/absender/absender1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grapesoda';
+    src: url('../fonts/grapesoda_2/GrapeSoda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.army-rust-font {
+    line-height: 40px;
+    font-size: 50px;
+    font-family: Army-Rust;
+    margin-bottom: 0px;
+}
+
+.absender-font {
+    line-height: 40px;
+    font-size: 50px;
+    font-family: Absender;
+    margin-bottom: 0px;
+}
+
+.grapesoda-font {
+    line-height: 40px;
+    font-size: 50px;
+    font-family: Grapesoda;
+    margin-bottom: 0px;
+}
+
+.times-font {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.gray {
+    color: gray;
+}
+
+a {
+    color: #f1ccff;
+}
+
+#unbreakable {
+    white-space: nowrap;
+}
+
+.kinda-centered {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+#align-left {
+    text-align: left;
+}
+
+hr {
+    width: 700px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.javascript-warning {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    align-items: center;
+    background-color: #000000ad;
+    z-index: 7776;
+    left: 0px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.javascript {
+    background: #d44c4c;
+    background: linear-gradient(0deg, rgb(211, 62, 62) 0%, rgb(155, 41, 41) 100%);
+    position: fixed;
+    z-index: 7777;
+    padding: 30px 30px;
+    padding-top: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.javascript-warning-img {
+    position: relative;
+    top: 10px;
+    margin-right: 10px;
+    height: 100px;
+}
+
+.javascript-warning-titles {
+    margin-left: 13%;
+    text-align: left;
+    display: flex;
+}
+
+
+.close-javascript-warning-checkbox {
+    display: none;
+}
+
+.close-javascript-warning-label {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+}
+
+.close-javascript-warning-checkbox:checked + .javascript-warning {
+    display: none;
+}
+
+.top-banner {
+    z-index: 666;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #252525;
+    width: 100vw;
+    height: 60px;
+    left: 0;
+    top: 0;
+}
+
+.top-banner-title {
+    height: 40px;
+    padding: 10px 10px;
+}
+
+.top-banner-link {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.top-banner-links {
+    width: 100%;
+    padding-right: 10px;
+    text-align: right;
+}
+
+#top-banner-selected {
+    border: 2px solid #c73bff;
+    border-radius: 10px;
+}
+
+.top-banner-generic-icon {
+    cursor: pointer;
+    height: 25px;
+}
+
+.top-banner-menu-icon {
+    padding-right: 10px;
+    cursor: pointer;
+    height: 25px;
+}
+
+#top-banner-link-special {
+    border: 2px solid #c73bff;
+    border-radius: 10px;
+    white-space: nowrap;
+    margin-right: 20px;
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .top-banner-menu-icon {
+        display: none;
+    }
+    #top-banner-link-special {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .top-banner-menu-icon {
+        display: block;
+    }
+    .top-banner-link {
+        display: none;
+    }
+    #top-banner-link-special {
+        display: flex;
+    }
+}
+
+.top-banner-toggle-hamburger {
+    display: none;
+}
+
+.top-banner-hamburger-toggle-label {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-banner-hamburger-content {
+    position: fixed;
+    display: none;
+    background-color: #252525;
+    border: #3d3d3d 2px solid;
+    width: 90vw;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+}
+
+.top-banner-toggle-hamburger:checked + .top-banner-hamburger-toggle-label + .top-banner-hamburger-content {
+    display: block;
+}
+
+#top-banner-hamburger-close-text {
+    position: relative;
+    bottom: 16px;
+    left: 10px;
+}
+
+.top-banner-hamburger-close-align {
+    margin: 10px 10px;
+    display: flex;
+}
+
+.top-banner-hamburger-links {
+    display: grid;
+}
+
+.top-banner-hamburger-link {
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: #ffffff 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#top-banner-hamburger-link-special {
+    color: #f0caff;
+    border: 2px solid #c73bff;
+}
+
+#top-banner-hamburger-link-special-icon {
+    height: 20px;
+}
+
+.top-banner-hamburger-tori-logo {
+    align-items: center;
+    display: flex;
+    padding-top: 20vh;
+    margin: auto;
+    height: 30px;
+}
+
+#top-banner-hamburger-legal-text {
+    text-align: center;
+}
+
+.banner-img {
+    position: absolute;
+    height: 90vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+}
+
+.banner-hit {
+    height: 90vh;
+}
+
+.scroll-down {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: solid 2px #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  animation: scroll 1s infinite alternate;
+  margin: auto;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-15px) rotate(45deg);
+  }
+  100% {
+    transform: translateY(-10px) rotate(45deg);
+ }
+}
+
+.scroll-down-text {
+    text-align: center;
+    margin-top: 0px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    margin-top: 50px;
+    position: absolute;
+    left: 0px;
+    background-color: #2c2330;
+    width: 100vw;
+    text-align: center;
+}
