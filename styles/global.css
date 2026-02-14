@@ -4,6 +4,14 @@ body {
     color: #ffffff;
 }
 
+.user-notification {
+    position: absolute;
+    background-color: #ff5252;
+    width: 100vw;
+    left: 0px;
+    color: #ffffff;
+}
+
 @font-face {
     font-family: 'Army-Rust';
     src: url('../fonts/army_rust/ARMY\ RUST.ttf') format('truetype');
